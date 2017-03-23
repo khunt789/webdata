@@ -1434,9 +1434,10 @@ angular.module('app.controllers', [])
 					  var params = {
                     url: $scope.searchData.text
                 };
+					 console.log('test 1 pass');
                 $scope.showLoading();
                 $rootScope.service.get('search', params, function (data) {						 
-                    
+                    console.log(data);
 						  if(data.status.message != ''){
 								$scope.hideLoading();	  
 						  }

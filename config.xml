@@ -74,7 +74,6 @@
     <preference name="android-minSdkVersion" value="16" />
    
     <plugin name="cordova-plugin-device"   />
-     <gap:plugin name="com.paypal.cordova.mobilesdk" source="npm" />
     <plugin name="cordova-plugin-geolocation"   />
     <plugin name="cordova-plugin-inappbrowser" source="npm" />
     <!--<plugin name="org.apache.cordova.inappbrowser" source="npm"/>-->
