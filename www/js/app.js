@@ -5,18 +5,7 @@ angular.module('app', [
     'ionic', 'ngCordova','ngCordovaOauth','ngOpenFB', 'pascalprecht.translate','ionic-ratings',
     'app.controllers', 'app.filters', 'ionicLazyLoad','slickCarousel'	,'sw2.ionic.password-show-hide'
 ])
-.constant('shopSettings',{
-   
-   
-   payPalSandboxId : 'AdjksaEs2_YzWFOl0hpAD4chm_v_nbOQNmoeD1fMftDf5o3Md-FMcZW7P4DNDf9hsU70Zq3QV-T65Crv',
-   payPalProductionId : 'patel.kalpeshbeit2010-facilitator@gmail.com',
-   payPalEnv: 'PayPalEnvironmentSandbox',   // for testing  production for production
-   payPalShopName : 'MyShopName',
-   payPalMerchantPrivacyPolicyURL : 'http://pr.veba.co/~shubantech/ebranch',
-   payPalMerchantUserAgreementURL : 'http://pr.veba.co/~shubantech/ebranch'
-   
-   
-   
+.constant('shopSettings',{           
     
 })
 .factory('PaypalService', ['$q', '$ionicPlatform', 'shopSettings', '$filter', '$timeout', function ($q, $ionicPlatform, shopSettings, $filter, $timeout) {
