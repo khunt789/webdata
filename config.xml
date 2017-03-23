@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.ebranch.app"
+        id        = "com.webdata.app"
         version   = "1.0.1" 
         android-versionCode="2"
         ios-CFBundleVersion="1.0.0"
