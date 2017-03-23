@@ -1426,6 +1426,7 @@ angular.module('app.controllers', [])
         // homeä¸­ï¼Œå?–bannerï¼Œå¿«é€Ÿæ?œç´¢
         .controller('HomeCtrl', function ($scope, $rootScope, $state, $ionicSlideBoxDelegate,$ionicPopup,$stateParams,
 		  	$cordovaSocialSharing,commonFunction,$timeout, $ionicModal, $ionicLoading) {
+				console.log("test pass");
             $scope.searchData = {};            
             $scope.onSearch = function () {					
                 if (!$scope.searchData.text) {

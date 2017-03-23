@@ -3,7 +3,7 @@
 window.Config = {
     isRelease: true,
     debug: true,
-    baseUrl: 'http://localhost/grabing/',
+    baseUrl: 'http://freephphelp.com/work/',
 
     getRememberme: function () {
         return localStorage['rememberme'] || true;
