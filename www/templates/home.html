@@ -1,0 +1,75 @@
+<style>
+.prod_slider {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px 0;color: #000 !important;
+}
+.button.button-full.button-assertive {
+    margin: 0 auto;
+    width: 95%;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #999999 !important;
+}
+</style>
+<ion-view title="Home">
+  <ion-content>
+  	
+   
+                <form id="searAdv" ng-submit="onSearch()">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input  type="text" placeholder="Enter URL" ng-model="searchData.text">
+                </label>
+                <input  type="submit" class="button button-full button-assertive" value="Search" />
+                </form>
+	
+	    
+	
+    <div class="card" ng-if="weather2.status.data.h1">
+      <div class="item item-divider">Current H1 tag</div>      
+      <div class="item item-text-wrap">
+         <div class="prod_slider slick-item" ng-repeat="product2 in weather2.status.data.h1">			
+      	{{product2.text}}
+         </div>      
+      </div>
+    </div>
+    
+    <div class="card" ng-if="weather2.status.data.h2">
+      <div class="item item-divider">Current H2 tag</div>      
+      <div class="item item-text-wrap">
+         <div class="prod_slider slick-item" ng-repeat="product2 in weather2.status.data.h2">			
+      	{{product2.text}}
+         </div>      
+      </div>
+    </div>
+    
+    <div class="card" ng-if="weather2.status.data.h3">
+      <div class="item item-divider">Current H3 tg</div>     
+      <div class="item item-text-wrap">
+         <div class="prod_slider slick-item" ng-repeat="product2 in weather2.status.data.h3">			
+      	{{product2.text}}
+         </div>      
+      </div>
+    </div>
+    
+    <div class="card" ng-if="weather2.status.data.h4">
+      <div class="item item-divider">Current H4 tag</div>      
+      <div class="item item-text-wrap">
+         <div class="prod_slider slick-item" ng-repeat="product2 in weather2.status.data.h4">			
+      	{{product2.text}}
+         </div>      
+      </div>
+    </div>
+    
+    <div class="card" ng-if="weather2.status.data.p">
+      <div class="item item-divider">Current P tag</div>      
+      <div class="item item-text-wrap">
+         <div class="prod_slider slick-item" ng-repeat="product2 in weather2.status.data.p">			
+      	{{product2.text}}
+         </div>      
+      </div>
+    </div>
+   
+    
+  </ion-content>
+</ion-view>

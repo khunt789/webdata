@@ -1,0 +1,67 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu-content edge-drag-threshold="false"
+  drag-content="false">
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button class="button-icon ion-arrow-left-c">
+            </ion-nav-back-button>
+
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <a href="#app/home" class="button button-icon nav-clear menu-close ion-ios-home-outline"></a>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent" animation="none"></ion-nav-view>
+    </ion-side-menu-content>
+
+
+    <ion-side-menu side="left">
+        <ion-header-bar ng-show="1"  class="menus bar-light header-set1">
+        
+        
+          <span ng-if="!user">
+            <div class="logn-before buttons">
+           <span ng-if="!user.avatar">
+                <span class="ion-person1"></span>
+              </span>
+            <div class="logn-link">
+                <a menu-toggle="left" href="#app/login">{{'login' | translate}}</a>&nbsp;&nbsp;<span>/</span>
+               <a menu-toggle="left" href="#app/register">{{'register' | translate}}</a>
+            </div>
+         
+        </div>  
+        
+         </span>
+     
+         		 <span ng-if="user">
+                 
+                 
+          <div class="user-avtar-set buttons">
+          
+           
+              <span ng-if="!user.avatar">
+                <span class="ion-person1"></span>
+              </span>
+              <span ng-if="!!user.avatar">
+                <img src="{{user.avatar}}" width="70" height="70">
+              </span>
+              <div class="seprt logn-user">
+              <span class="">
+                <div><a href="#app/frame/account/edit">{{user.name}}</a></div>
+                <div><a href="#app/frame/account/edit">{{user.email}}</a></div>
+    		  </span>
+              </div>
+              
+              </div>
+          </span>
+          
+          
+          
+        <span class="icon icon-close pull-right menu-close"></span>
+        </ion-header-bar>
+        
+                
+    </ion-side-menu>
+</ion-side-menus>
